@@ -14,15 +14,13 @@ class Orgalorg < Formula
     (buildpath/"bin").mkpath
 
     cd "src/github.com/reconquest/orgalorg" do
-      system "go", "get"
-      system "go", "build", "-x", "-ldflags=-X main.version=#{version}", "-gcflags=-trimpath #{buildpath}/src"
+      system "go", "build", "-ldflags=-X main.version=#{version}", "-gcflags=-trimpath #{buildpath}/src"
       bin.install "orgalorg"
     end
   end
 
-#  test do
-#    system "#{bin}/zabbixctl", "--version"
-#    assert_match "#{version}", shell_output("#{bin}/zabbixctl --version")
-#  end
+  test do
+    assert_match "#{version}", shell_output("#{bin}/zabbixctl --version")
+  end
 end
 
