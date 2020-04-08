@@ -1,6 +1,6 @@
 class Zabbixctl < Formula
   desc "Zabbixctl is tool for working with zabbix server api using command line interface"
-  version "20191128.52_64ed81a-1"
+  version "20191128.52_64ed81a"
   url "https://github.com/kovetskiy/zabbixctl.git", :revision => "64ed81a0e3957596e68c0ae1e7d8f4df50a83aee"
 
   bottle :unneeded
