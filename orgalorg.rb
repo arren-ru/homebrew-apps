@@ -20,7 +20,7 @@ class Orgalorg < Formula
   end
 
   test do
-    assert_match "#{version}", shell_output("#{bin}/zabbixctl --version")
+    assert_match "#{version}", shell_output("#{bin}/orgalorg --version")
   end
 end
 
