@@ -1,7 +1,7 @@
 class Orgalorg < Formula
   desc "Parallel SSH commands executioner and file synchronization tool"
-  version "200115.158_70019e7"
-  url "https://github.com/reconquest/orgalorg.git", :revision => "70019e77521102efe3d062f31e2573ef10993334"
+  version "200630.160_84ef7d26"
+  url "https://github.com/reconquest/orgalorg.git", :revision => "84ef7d267f2fcc836675501a4cac07b5ef5d691b"
 
   bottle :unneeded
 
