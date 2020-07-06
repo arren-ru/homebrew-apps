@@ -14,7 +14,8 @@ class Orgalorg < Formula
     (buildpath/"bin").mkpath
 
     cd "src/github.com/reconquest/orgalorg" do
-      system "go", "build", "-ldflags=-X main.version=#{version}", "-gcflags=-trimpath #{buildpath}/src"
+      system "go", "mod", "vendor"
+      system "go", "build", "-mod=vendor", "-ldflags=-X main.version=#{version}", "-gcflags=-trimpath #{buildpath}/src"
       bin.install "orgalorg"
     end
   end
