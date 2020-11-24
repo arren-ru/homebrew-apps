@@ -24,4 +24,3 @@ class Zabbixctl < Formula
     assert_match "#{version}", shell_output("#{bin}/zabbixctl --version")
   end
 end
-

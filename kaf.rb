@@ -24,4 +24,3 @@ class Kaf < Formula
     (zsh_completion/"_kaf").write output
   end
 end
-
